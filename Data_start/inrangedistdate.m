@@ -11,7 +11,7 @@ numBound = 0;
 numOut = 0;
 for j = 1:1:N
     if indate(j,2) ~=0
-        output1(j,1:5) = [data(j),lons(indate(j,2)),lats(indate(j,2)),dist(indate(j,2)),radius(indate(j,2))];
+        output1(j,1:5) = [data(j),lons(indate(j,2)),lats(indate(j,2)),dist(indate(j,2)),radius];
         output2(j,1) = "Within date range";
         output2(j,2) = indist(indate(j,2));
         if output2(j,2) == "Core"
