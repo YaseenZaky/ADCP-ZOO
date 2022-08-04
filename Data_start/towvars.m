@@ -1,0 +1,11 @@
+function Towlinevars = towvars(line)
+Towlinevars.TowLat = line.Lat_Deg + line.Lat_Min/60;
+Towlinevars.TowLon = -line.Lon_Deg + -line.Lon_Min/60;
+Towlinevars.TowDat = line.Tow_Date;
+Towlinevars.TowSTim = line.TowSTime;
+Towlinevars.TowETim = line.TowETime;
+Towlinevars.TowSTimdtnm = datenum(Towlinevars.TowSTim);
+Towlinevars.TowETimdtnm = datenum(Towlinevars.TowETim);
+Towlinevars.TowDepth = line.Tow_DpthM;
+Towlinevars.TowSmlVol = line.Sml_PVolC3;
+Towlinevars.TowTotVol = line.Ttl_PVolC3;

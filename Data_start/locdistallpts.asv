@@ -1,0 +1,5 @@
+function patternofscatter = scatterpatter(distmtx,timmtx,distrad,timrad,varx,vary)
+
+    for l = 1:M
+        distmtx(distmtx>distrad)=NaN
+end
